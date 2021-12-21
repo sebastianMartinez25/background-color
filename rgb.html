@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <style type="text/css">
+    body
+    {
+      font-size:20px;
+      font-family:"helvetica";
+    }
+    #tituloRojo{
+      color: red;
+    }
+    #tituloVerde{
+      color: green;
+    }
+    #tituloAzul{
+      color: blue;
+    }
+    input[type="range"] {
+    width: 100%;
+    margin-top: 10px ;
+    -webkit-appearance: none;
+    width: 50%;
+    height: 4px;
+    border-radius: 5px;
+    background: #d8d8d8;
+    outline: none;
+    transition: opacity .2s;
+}
+    </style>
+  <title>Colores RGB</title>
+  </head>
+  <body>
+    <h1>ESCOGE LA INTENSIDAD DE 0 A 255</h1>
+    <p id="tituloRojo">Color:<br>RED</br>
+      <input type="range" min="0" max="255" step="1" value="0" id="colorRojo" list="tickmarks">  </input>
+      <datalist id="tickmarks">
+      </datalist>
+      <input type="text" id="numero1" style="width:60px;height:15px" onkeydown="return validarResultadoBinario(event)"></input>
+      </p>
+      <p id="tituloVerde">Color:<br>GREEN</br>
+        <input type="range" min="0" max="255" step="1" value="0" id="colorVerde" list="tickmarks2"></input>
+        <datalist id="tickmarks2">
+        </datalist>
+        <input type="text" id="numero2" style="width:60px;height:15px" onkeydown="return validarResultadoBinario(event)"></input>
+        </p>
+        <p id="tituloAzul">Color:<br>BLUE</br>
+          <input type="range" min="0" max="255" step="1" value="0" id="colorAzul" list="tickmarks3"></input>
+          <datalist id="tickmarks3">
+          </datalist>
+          <input type="text" id="numero3" style="width:60px;height:15px" onkeydown="return validarResultadoBinario(event)"></input>
+          </p>
+    <script src="rgb.js"></script>
+    </body>
+    </html>
