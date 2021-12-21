@@ -10,12 +10,15 @@
     }
     #tituloRojo{
       color: red;
+      margin:auto;
     }
     #tituloVerde{
       color: green;
+      margin:auto;
     }
     #tituloAzul{
       color: blue;
+      margin:auto;
     }
     input[type="range"] {
     width: 100%;
@@ -28,11 +31,15 @@
     outline: none;
     transition: opacity .2s;
 }
+#titulo{
+  margin:auto;
+  text-align:center;
+}
     </style>
   <title>Colores RGB</title>
   </head>
   <body>
-    <h1>ESCOGE LA INTENSIDAD DE 0 A 255</h1>
+    <h1 id="titulo">ESCOGE LA INTENSIDAD DE 0 A 255</h1>
     <p id="tituloRojo">Color:<br>RED</br>
       <input type="range" min="0" max="255" step="1" value="0" id="colorRojo" list="tickmarks">  </input>
       <datalist id="tickmarks">
